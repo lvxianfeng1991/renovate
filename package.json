@@ -37,9 +37,7 @@
     "test-dirty": "git diff --exit-code",
     "test-e2e": "npm pack && cd test/e2e && yarn install --no-lockfile --ignore-optional --prod && yarn test",
     "test-schema": "node -r ts-node/register/transpile-only -- test/json-schema.ts",
-    "test": "run-s lint test-schema type-check jest",
     "tsc": "tsc",
-    "type-check": "run-s generate:* \"tsc --noEmit {@}\"",
     "verify": "node --experimental-modules tools/verify.mjs"
   },
   "repository": {
